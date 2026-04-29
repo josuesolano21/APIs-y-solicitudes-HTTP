@@ -1,0 +1,1 @@
+/*Solicitud 8: Realice una solicitud DELETE para eliminar una publicación existente.*/
