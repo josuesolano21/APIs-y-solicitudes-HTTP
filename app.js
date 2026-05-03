@@ -21,3 +21,14 @@ modificarCampoPost();
 eliminarPost();
 verificarRecursoEliminado();
 compararRespuestas();*/
+
+//SOlicitud 5
+
+import { crearComentario } from "./JS/index.js";
+
+crearComentario({
+  postId: 1,
+  name: "Sara Rojas",
+  email: "sararojas3315656@gmail.com",
+  body: "actualización comentario"
+});
