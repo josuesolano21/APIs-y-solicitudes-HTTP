@@ -21,3 +21,11 @@ modificarCampoPost();
 eliminarPost();
 verificarRecursoEliminado();
 compararRespuestas();*/
+
+import { actualizarPost } from "./JS/index.js";
+
+actualizarPost(1, {
+  userId: 1,
+  title: "actualización titulo",
+  body: "actualiación contenido"
+});
