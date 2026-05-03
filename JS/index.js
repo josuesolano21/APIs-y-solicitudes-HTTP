@@ -12,3 +12,5 @@ export { eliminarPost } from "./parte4-delete.js";
 export { verificarRecursoEliminado, compararRespuestas } from "./parte5-analisis.js";
 
 */
+
+export { buscarPublicacion } from "./transferencia/enunciado_3.js";
