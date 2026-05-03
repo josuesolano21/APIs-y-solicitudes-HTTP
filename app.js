@@ -21,3 +21,9 @@ modificarCampoPost();
 eliminarPost();
 verificarRecursoEliminado();
 compararRespuestas();*/
+
+//Enunciado 4 
+
+import { DelPublicacion } from "./JS/index.js";
+
+DelPublicacion(1);
