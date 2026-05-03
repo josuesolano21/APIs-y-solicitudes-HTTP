@@ -1,23 +1,7 @@
-// cliente/app.js
-// Archivo principal - ejecuta todas las solicitudes
+import { crearPublicacion } from "./JS/apropiacion/solicitud_4.js";
 
-/* ejemplo de uso:
-import { 
-  obtenerUsuarios, obtenerUsuarioPorId, obtenerPostsPorUsuario,
-  crearPost, crearComentario,
-  actualizarPost, modificarCampoPost,
-  eliminarPost,
-  verificarRecursoEliminado, compararRespuestas
-} from "./apropiacion/index.js";
-
-// Ejecutar
-obtenerUsuarios();
-obtenerUsuarioPorId(1);
-obtenerPostsPorUsuario(1);
-crearPost();
-crearComentario();
-actualizarPost();
-modificarCampoPost();
-eliminarPost();
-verificarRecursoEliminado();
-compararRespuestas();*/
+crearPublicacion({
+  userId: 1,
+  title: "Hola",
+  body: "Contenido de user 1"
+});
