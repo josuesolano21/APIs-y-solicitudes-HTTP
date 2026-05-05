@@ -6,6 +6,7 @@ async function menu() {
   while (true) {
     console.log("\n===== MENÚ - APIs y Solicitudes HTTP =====");
     console.log("4. Solicitud 4 - Crear publicación");
+    console.log("5. Solicitud 5 - Crear comentario");
     console.log("7. Solicitud 7 - PATCH (modificar un campo)");
     console.log("8. Solicitud 8 - DELETE (eliminar una publicación)");
     console.log("9. Solicitud 9 - Verificar recurso eliminado");
@@ -18,6 +19,9 @@ async function menu() {
     switch (opcion) {
       case "4":
         await ejercicios.crearPublicacion();
+        break;
+      case "5":
+        await ejercicios.crearComentario();
         break;
       case "7":
         await ejercicios.patchPost();
