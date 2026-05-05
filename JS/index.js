@@ -20,3 +20,6 @@ export { deletePost } from './apropiacion/solicitud_8.js';
 export { getPostEliminado } from './apropiacion/solicitud_9.js';
 
 export { getGeneral } from './apropiacion/solicitud_10.js';
+
+/*Transferencia */
+export { usuariosConPublicaciones } from './transferencia/enunciado_1.js';

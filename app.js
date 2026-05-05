@@ -33,6 +33,7 @@ async function menu() {
     console.log("8. Solicitud 8 - DELETE (eliminar una publicación)");
     console.log("9. Solicitud 9 - Verificar recurso eliminado");
     console.log("10. Solicitud 10 - GET general y comparación de respuestas");
+    console.log("11. Enunciado 1: Usuarios activos y sus publicaciones");
     console.log("0. Salir");
 
 
@@ -50,13 +51,18 @@ async function menu() {
         await ejercicios.deletePost();
         break;
       
-        case "9":
+      case "9":
         await ejercicios.getPostEliminado();
         break;
+      
       case "10":
         await ejercicios.getGeneral();
         break;
-
+      
+      case "11":
+        await ejercicios.usuariosConPublicaciones();
+        break;
+      
       case "0":
         console.log("Hasta luego.");
         process.exit(0);
