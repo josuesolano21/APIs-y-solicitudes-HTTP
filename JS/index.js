@@ -17,6 +17,8 @@ export { crearPublicacion } from "./solicitud_4.js";
 
 export { crearComentario } from "./apropiacion/solicitud_5.js";
 
+export { actualizarPost } from "./apropiacion/solicitud_6.js";
+
 export { patchPost } from './apropiacion/solicitud_7.js';
 
 export { deletePost } from './apropiacion/solicitud_8.js';
