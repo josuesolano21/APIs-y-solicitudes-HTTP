@@ -14,3 +14,14 @@ export { verificarRecursoEliminado, compararRespuestas } from "./parte5-analisis
 */
 
 export { crearPublicacion } from "./solicitud_4.js";
+
+export { patchPost } from './apropiacion/solicitud_7.js';
+
+export { deletePost } from './apropiacion/solicitud_8.js';
+
+export { getPostEliminado } from './apropiacion/solicitud_9.js';
+
+export { getGeneral } from './apropiacion/solicitud_10.js';
+
+/*Transferencia */
+export { usuariosConPublicaciones } from './transferencia/enunciado_1.js';
