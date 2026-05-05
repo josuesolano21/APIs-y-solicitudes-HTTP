@@ -21,3 +21,34 @@ modificarCampoPost();
 eliminarPost();
 verificarRecursoEliminado();
 compararRespuestas();*/
+
+import * as ejercicios from "./JS/index.js";
+import promptSync from "prompt-sync";
+const prompt = promptSync({ sigint: true });
+
+async function menu() {
+  while (true) {
+    console.log("\n===== MENÚ - APIs y Solicitudes HTTP =====");
+    console.log("7. Solicitud 7 - PATCH (modificar un campo)");
+    console.log("0. Salir");
+
+    const opcion = prompt("Elige una opción: ").trim();
+
+    switch (opcion) {
+      case "7":
+        await ejercicios.patchPost();
+        break;
+      /* introducir siguientes ejercicios aqui con este formato:
+      case "8":
+        await ejercicios.nombreFuncion();
+        break; */
+      case "0":
+        console.log("Hasta luego.");
+        process.exit(0);
+      default:
+        console.log("Opción no válida.");
+    }
+  }
+}
+
+menu();

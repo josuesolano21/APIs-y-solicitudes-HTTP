@@ -12,3 +12,5 @@ export { eliminarPost } from "./parte4-delete.js";
 export { verificarRecursoEliminado, compararRespuestas } from "./parte5-analisis.js";
 
 */
+
+export { patchPost } from './apropiacion/solicitud_7.js';
