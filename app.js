@@ -32,6 +32,7 @@ async function menu() {
     console.log("7. Solicitud 7 - PATCH (modificar un campo)");
     console.log("8. Solicitud 8 - DELETE (eliminar una publicación)");
     console.log("9. Solicitud 9 - Verificar recurso eliminado");
+    console.log("10. Solicitud 10 - GET general y comparación de respuestas");
     console.log("0. Salir");
 
 
@@ -51,6 +52,9 @@ async function menu() {
       
         case "9":
         await ejercicios.getPostEliminado();
+        break;
+      case "10":
+        await ejercicios.getGeneral();
         break;
 
       case "0":

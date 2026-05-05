@@ -18,3 +18,5 @@ export { patchPost } from './apropiacion/solicitud_7.js';
 export { deletePost } from './apropiacion/solicitud_8.js';
 
 export { getPostEliminado } from './apropiacion/solicitud_9.js';
+
+export { getGeneral } from './apropiacion/solicitud_10.js';
