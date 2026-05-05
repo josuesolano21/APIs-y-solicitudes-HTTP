@@ -13,4 +13,23 @@ export { verificarRecursoEliminado, compararRespuestas } from "./parte5-analisis
 
 */
 
+export { crearPublicacion } from "./solicitud_4.js";
+
+export { crearComentario } from "./apropiacion/solicitud_5.js";
+
+export { actualizarPost } from "./apropiacion/solicitud_6.js";
+
+export { patchPost } from './apropiacion/solicitud_7.js';
+
+export { deletePost } from './apropiacion/solicitud_8.js';
+
+export { getPostEliminado } from './apropiacion/solicitud_9.js';
+
+export { getGeneral } from './apropiacion/solicitud_10.js';
+
+/*Transferencia */
+export { usuariosConPublicaciones } from './transferencia/enunciado_1.js';
+
+export { buscarPublicacion } from "./transferencia/enunciado_3.js";
+
 export { DelPublicacion } from "./transferencia/enunciado_4.js";

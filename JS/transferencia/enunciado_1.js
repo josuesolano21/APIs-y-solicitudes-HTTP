@@ -19,3 +19,32 @@ Datos de salida
 • Listado de usuarios con:
 o Nombre del usuario
 o Cantidad de publicaciones asociadas (puede ser 0) */
+
+// enunciado_1.js
+// Usuarios activos y sus publicaciones
+
+export const usuariosConPublicaciones = async () => {
+  const [usersRes, postsRes] = await Promise.all([
+    fetch("http://localhost:3000/users"),
+    fetch("http://localhost:3000/posts"),
+  ]);
+
+  const users = await usersRes.json();
+  const posts = await postsRes.json();
+
+  const resultado = users.map((user) => {
+    const publicaciones = posts.filter(
+      (post) => String(post.userId) === String(user.id)
+    );
+
+    return {
+      nombre: user.name,
+      cantidadPublicaciones: publicaciones.length,
+    };
+  });
+
+  console.log("Usuarios y sus publicaciones:");
+  resultado.forEach((u) => {
+    console.log(`- ${u.nombre}: ${u.cantidadPublicaciones} publicación(es)`);
+  });
+};
