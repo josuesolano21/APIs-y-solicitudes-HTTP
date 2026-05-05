@@ -29,3 +29,5 @@ export { getGeneral } from './apropiacion/solicitud_10.js';
 
 /*Transferencia */
 export { usuariosConPublicaciones } from './transferencia/enunciado_1.js';
+
+export { buscarPublicacion } from "./transferencia/enunciado_3.js";
