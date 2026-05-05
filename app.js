@@ -30,7 +30,9 @@ async function menu() {
   while (true) {
     console.log("\n===== MENÚ - APIs y Solicitudes HTTP =====");
     console.log("7. Solicitud 7 - PATCH (modificar un campo)");
+    console.log("8. Solicitud 8 - DELETE (eliminar una publicación)");
     console.log("0. Salir");
+
 
     const opcion = prompt("Elige una opción: ").trim();
 
@@ -42,6 +44,10 @@ async function menu() {
       case "8":
         await ejercicios.nombreFuncion();
         break; */
+      case "8":
+        await ejercicios.deletePost();
+        break;
+
       case "0":
         console.log("Hasta luego.");
         process.exit(0);
