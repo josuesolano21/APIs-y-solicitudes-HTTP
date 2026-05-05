@@ -19,3 +19,37 @@ Datos de salida:
 • Mensaje de resultado:
 o “Publicación eliminada correctamente”
 o “No se puede eliminar la publicación porque tiene comentarios”*/
+
+// GET, lógica y DELETE.
+
+const DelPublicacion = async (id) => {
+  //Consultar publicaciones
+    const respuestaPublicaciones = await fetch('http://localhost:3000/posts');
+    const publicaciones = await respuestaPublicaciones.json();
+    console.log("Publicaciones:", publicaciones);
+
+  //Consultar comentarios Body
+    const respuestaComentarios = await fetch(`http://localhost:3000/comments?postId=${id}`); //buscar comentario
+    const comentarios = await respuestaComentarios.json();
+    console.log("Comentarios:", comentarios);
+
+  //Verificar comentarios
+    if (comentarios.length > 0) {
+    console.log("Error: No se puede eliminar la publicación porque tiene comentarios");
+    } else {
+    //Eliminar
+    await fetch(`http://localhost:3000/posts/${id}`, { //borrar comentario
+        method: 'DELETE',
+    });
+
+    console.log("Publicación eliminada.");
+
+    //Nueva consulta
+    const respuestaValidacion = await fetch('http://localhost:3000/posts');
+    const publicacionesActualizadas = await respuestaValidacion.json();
+    console.log("Publicaciones después de eliminar:", publicacionesActualizadas);
+    }
+}
+
+export { DelPublicacion };
+

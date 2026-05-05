@@ -14,6 +14,7 @@ async function menu() {
     console.log("10. Solicitud 10 - GET general y comparación de respuestas");
     console.log("11. Enunciado 1 - Usuarios activos y sus publicaciones");
     console.log("12. Enunciado 3 - Buscar publicación");
+    console.log("13. Enunciado 4 - Eliminar publicación");
     console.log("0. Salir");
 
     const opcion = prompt("Elige una opción: ").trim();
@@ -45,6 +46,9 @@ async function menu() {
         break;
       case "12":
         await ejercicios.buscarPublicacion();
+        break;
+      case "13":
+        await ejercicios.DelPublicacion();
         break;
       case "0":
         console.log("Hasta luego.");

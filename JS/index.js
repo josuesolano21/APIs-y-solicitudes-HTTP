@@ -31,3 +31,5 @@ export { getGeneral } from './apropiacion/solicitud_10.js';
 export { usuariosConPublicaciones } from './transferencia/enunciado_1.js';
 
 export { buscarPublicacion } from "./transferencia/enunciado_3.js";
+
+export { DelPublicacion } from "./transferencia/enunciado_4.js";
