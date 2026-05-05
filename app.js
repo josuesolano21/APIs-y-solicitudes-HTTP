@@ -31,6 +31,7 @@ async function menu() {
     console.log("\n===== MENÚ - APIs y Solicitudes HTTP =====");
     console.log("7. Solicitud 7 - PATCH (modificar un campo)");
     console.log("8. Solicitud 8 - DELETE (eliminar una publicación)");
+    console.log("9. Solicitud 9 - Verificar recurso eliminado");
     console.log("0. Salir");
 
 
@@ -46,6 +47,10 @@ async function menu() {
         break; */
       case "8":
         await ejercicios.deletePost();
+        break;
+      
+        case "9":
+        await ejercicios.getPostEliminado();
         break;
 
       case "0":
